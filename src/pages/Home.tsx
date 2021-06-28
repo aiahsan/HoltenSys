@@ -6,7 +6,9 @@ import SideNav from '../components/sideNav'
 import TopBar from '../components/topBar'
 import { Table } from 'react-bootstrap'
 import CheckBox from '../components/checkBox'
-import Icon from '../svgIcons/svgIcons'
+import Icon from '../svgIcons/svgIcons';
+import Linechart from '../components/chart';
+
 interface TodoProps {
     title: string,
     description: string,
@@ -126,6 +128,7 @@ printing and typesetting industry. "/>
                         <Icon name="menu" />
                     </button>
                 </div>
+                <Linechart/>
 
             </div>
         </div>

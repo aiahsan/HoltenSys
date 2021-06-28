@@ -13,7 +13,7 @@ import Messaging from './pages/Messaging'
 function App() {
   return (
     <>
-    <Lonnskrav/>
+    <Home/>
     </>
   );
 }

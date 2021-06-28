@@ -427,7 +427,8 @@ border-radius: 8px;
         border-radius: 16px;
         
         width: 100%;
-        padding: 22px 0px 22px 22px;
+        padding: 22px 0px 48px 22px;
+        margin-top: 30px;
     }
 
 
@@ -907,4 +908,43 @@ border-bottom: 1px solid rgba(68, 68, 93, 0.07)!important;
     .sdioas-2wsdasd
     {display: flex;
         align-items: center;
+    }
+
+    .recharts-surface{
+        position: relative!important;
+        left: -23px!important;
+        top: 18px;
+    }
+    .recharts-label::after{
+        content: '';
+        width: 100px;
+        height: 100px;
+        background-color: black;
+    }
+    .recharts-legend-item svg{
+        display: none!important;
+    }
+    .recharts-default-legend .legend-item-0{
+        margin-right: 36px!important;
+    }
+    .recharts-default-legend .legend-item-0::after{
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: #2E53DA;
+        position: absolute;
+        right: 222px;
+        border-radius: 4px;
+        top: 2px;
+    }
+
+    .recharts-default-legend .legend-item-1::after{
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: #FFAA33;
+        position: absolute;
+        right: 101px;
+        border-radius: 4px;
+        top: 2px;
     }
