@@ -111,8 +111,8 @@ const data = [
 
     return (
         <LineChart
-        width={1100}
-        height={437}
+        width={1080}
+        height={461}
         data={data}
         margin={{
           top: 5,

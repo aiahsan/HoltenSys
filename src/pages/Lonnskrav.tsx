@@ -23,14 +23,14 @@ const MenuItems=[{title:"Bonavn",isCheck:true,isDisabled:true,onClick:()=>alert(
 const Home = () => {
     return <div className="app-con d-flex">
         <SideNav />
-        <div className="jasdokf-we23">
-            <div className="d-flex justify-content-between">
+        <div className="main-body">
+            <div className="top-bar-main d-flex justify-content-between">
                 <SearchBar />
                 <TopBar />
             </div>
             <div className="sdioas-2wsdasd">
                 <h1 className="nasdifas-jdasde">Lonnskrav (3)</h1>
-                <div style={{marginLeft:14}}>
+                <div className="ml-14px">
                 <BreadCrum items={[{title:"Alle",isActive:true},{title:"0. Klargjore for NAV",isActive:false}
                 ,{title:"1. Resultat NAV-behandlling",isActive:false}
                 ,{title:"2. Utbetaling",isActive:false}
@@ -46,7 +46,7 @@ const Home = () => {
                 
             </div>
             <div className="d-flex ">
-                <div className="niasdf-ashewie mafid-wewd pt-0">
+                <div className="chart-main-bd mafid-wewd pt-0">
                     
                     <div className="hdsauds-23wj ">
                         <Table responsive borderless className="chuasjse-esduw-2">

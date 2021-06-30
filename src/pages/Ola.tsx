@@ -15,8 +15,8 @@ const MenuItems1=[{title:"Send e-post",onClick:()=>alert()},{title:"Last opp dok
 const Home = () => {
     return <div className="app-con d-flex">
         <SideNav />
-        <div className="jasdokf-we23">
-            <div className="d-flex justify-content-between">
+        <div className="main-body">
+            <div className="top-bar-main d-flex justify-content-between">
                 <SearchBar />
                 <TopBar />
             </div>
@@ -24,14 +24,14 @@ const Home = () => {
                 <h1 className="nasdifas-jdasde">Ola</h1>
             </div>
             <div className="d-flex justify-content-between caslds0a2-ws1 jasdkf-sajeiw">
-                <div>
+                <div className="bread-body-div-1">
                     <BreadCrum items={MenuItems}/>
                 </div>
-                <div>
+                <div className="cst-bar-btn">
                    <Dropdown items={MenuItems1} style={{    backgroundColor: "#2E53DA", color: "white"}} title="Behandle"/>
                 </div>
             </div>
-            <div className="d-flex ">
+            <div className="d-flex card-wrapper-main">
                 <div className="jdisfj-jsadis2w mafid-wewd">
                     <div className="sjadksaj0-12as1">
                         <h2>Porsonopplysinnger</h2>
@@ -132,7 +132,7 @@ const Home = () => {
             </div>
 
 
-            <div className="d-flex ndasi-ase2das ">
+            <div className="d-flex ndasi-ase2das card-wrapper-main ">
                 <div className="jdisfj-jsadis2w mafid-wewd">
                     <div className="sjadksaj0-12as1">
                         <h2>Betalingsinfo utenlandsk ansatt</h2>

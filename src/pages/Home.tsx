@@ -44,16 +44,16 @@ const TodoItem = (props: TodoProps) => {
 const Home = () => {
     return <div className="app-con d-flex">
         <SideNav />
-        <div className="jasdokf-we23">
-            <div className="d-flex justify-content-between">
+        <div className="main-body">
+            <div className="top-bar-main d-flex justify-content-between">
                 <SearchBar />
                 <TopBar />
             </div>
             <div>
                 <h1 className="nasdifas-jdasde">Dashboard</h1>
             </div>
-            <div className="d-flex ">
-                <div className="huisdfasd-sauawe-1 mafid-wewd">
+            <div className="d-flex row-1-cst ">
+                <div className="todo-body-1 mafid-wewd">
                     <div className="d-flex justify-content-between ">
                         <h1 className="ldknaf-saedsd-1">Klienter</h1>
                         <button className="btn nkcsdoc-wdcsd mjdf-ds3">
@@ -98,7 +98,7 @@ const Home = () => {
                     </div>
 
                 </div>
-                <div className="huisdfasd-sauawe">
+                <div className="todo-body">
                     <div className="d-flex justify-content-between">
                         <h1 className="ldknaf-saedsd-1">Todo</h1>
                         <button className="btn nkcsdoc-wdcsd mjdf-ds3">
@@ -121,14 +121,17 @@ printing and typesetting industry. "/>
                 </div>
             </div>
 
-            <div className="niasdf-ashewie">
+            <div className="chart-main-bd">
                 <div className="d-flex justify-content-between ">
                     <h1 className="ldknaf-saedsd-1">History</h1>
                     <button className="btn nkcsdoc-wdcsd mjdf-ds3">
                         <Icon name="menu" />
                     </button>
                 </div>
-                <Linechart/>
+                <div className="chart-outer-body">
+                <Linechart/>    
+                </div>
+                
 
             </div>
         </div>

@@ -12,6 +12,7 @@ import MenuBtn from '../components/menubtn';
 import BreadCrum from '../components/breadCrum';
 import Switch from "react-switch";
 import { Editor } from '@tinymce/tinymce-react';
+import TopMenu from '../components/topmenu';
 
 const MenuItems = [{ title: "Detaljer", onClick: () => alert(), isActive: true }, { title: "Lonnskrav", onClick: () => alert(), isActive: false }, { title: "Dokumenter", onClick: () => alert(), isActive: false }];
 const MenuItems1 = [{ title: "Send e-post", onClick: () => alert() }, { title: "Last opp dokumentasjon", onClick: () => alert() }, { title: "Opprett Lonnskrav", onClick: () => alert() }, { title: "Opprett som kreditor", onClick: () => alert() }];
@@ -22,8 +23,8 @@ const Home = () => {
 
     return <div className="app-con d-flex">
         <SideNav />
-        <div className="jasdokf-we23">
-            <div className="d-flex justify-content-between">
+        <div className="main-body">
+            <div className="top-bar-main d-flex justify-content-between">
                 <SearchBar />
                 <TopBar />
             </div>
@@ -31,7 +32,7 @@ const Home = () => {
                 <h1 className="nasdifas-jdasde">Messaging</h1>
             </div>
 
-            <div className="d-flex ">
+            <div className="d-flex drp-main-bdy">
                 <div>
                     <Dropdown items={MenuItems1} title="Alle Statuser" />
 

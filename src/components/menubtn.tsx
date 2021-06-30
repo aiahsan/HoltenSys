@@ -15,7 +15,7 @@ interface ItemProp{
 }
 export default (props:DropdownProps)=>{
     const {items,style}=props;
-    return <div className="ihfisd0asn20-sa shadi-sa2edsan" style={style?{height:24}:{}}>
+    return <div className="menu-btn-cst cst-dropdown" style={style?{height:24}:{}}>
     <Dropdown >
   <Dropdown.Toggle  style={style?{...style}:{}}>
   <Icon name="menu-1"/>
@@ -23,7 +23,7 @@ export default (props:DropdownProps)=>{
 
   <Dropdown.Menu>
     {items?.map((x,i)=>  <Dropdown.Item >
-        <div className="ids0w-esd2" ><CheckBox isCheck={x.isCheck} isDisabled={x.isDisabled}/> <div className={`${x.isDisabled==true?"hids-euw23":""}`} onClick={x.onClick}>
+        <div className="menu-btn-item-cst" ><CheckBox isCheck={x.isCheck} isDisabled={x.isDisabled}/> <div className={`${x.isDisabled==true?"hids-euw23":""}`} onClick={x.onClick}>
         {x.title}
             </div> </div>
         </Dropdown.Item>)}

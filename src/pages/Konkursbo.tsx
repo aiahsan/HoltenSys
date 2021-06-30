@@ -22,8 +22,8 @@ const MenuItems=[{title:"Bonavn",isCheck:true,isDisabled:true,onClick:()=>alert(
 const Home = () => {
     return <div className="app-con d-flex">
         <SideNav />
-        <div className="jasdokf-we23">
-            <div className="d-flex justify-content-between">
+        <div className="main-body">
+            <div className="top-bar-main d-flex justify-content-between">
                 <SearchBar />
                 <TopBar />
             </div>
@@ -46,7 +46,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="d-flex ">
-                <div className="niasdf-ashewie mafid-wewd">
+                <div className="chart-main-bd mafid-wewd">
                     <div className="d-flex justify-content-between ">
                         <h1 className="ldknaf-saedsd-1">Klienter</h1>
                         <button className="btn nkcsdoc-wdcsd mjdf-ds3">
