@@ -8,16 +8,16 @@ export default ()=>{
         query: '(max-width: 768px)'
       })
     return isTablet?<Navbar collapseOnSelect expand="lg"  variant="light">
-    <Navbar.Brand href="#home"><Logo/></Navbar.Brand>
+    <Navbar.Brand href="/"><Logo/></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link href="#features">Dashboard</Nav.Link>
-        <Nav.Link href="#pricing">Konkursbo</Nav.Link>
-        <Nav.Link href="#pricing">Lønnskravene</Nav.Link>
-        <Nav.Link href="#pricing">Fordringer</Nav.Link>
-        <Nav.Link href="#pricing">Oppgaver</Nav.Link>
-        <Nav.Link href="#pricing">Messaging</Nav.Link>
+        <Nav.Link href="/">Dashboard</Nav.Link>
+        <Nav.Link href="/konkursbo">Konkursbo</Nav.Link>
+        <Nav.Link href="/lonnskrav">Lønnskravene</Nav.Link>
+        <Nav.Link href="/konkursboervi">Fordringer</Nav.Link>
+        <Nav.Link href="/ola">Oppgaver</Nav.Link>
+        <Nav.Link href="/messaging">Messaging</Nav.Link>
         
          </Nav>
       <Nav>
