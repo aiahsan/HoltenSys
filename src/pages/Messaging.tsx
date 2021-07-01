@@ -53,7 +53,7 @@ const Home = () => {
                         </button>
                     </div>
 
-                    <div className="ids0w-esd2" ><CheckBox isCheck={true} isDisabled={false} /> <div  >
+                    <div className="ids0w-esd2" ><CheckBox  isCheck={true} isDisabled={false} /> <div  >
                         Velg alle
                     </div>
                     </div>

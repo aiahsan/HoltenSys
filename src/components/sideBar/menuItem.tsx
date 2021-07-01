@@ -3,12 +3,13 @@ import Icon from '../../svgIcons/svgIcons'
 interface Props{
     title:String,
     icon:String,
-    isActive:Boolean
+    isActive:Boolean,
+    onClick:()=>void
 }
 const MenuItem =(props:Props)=>{
-const {title,icon,isActive}=props;
+const {title,icon,isActive,onClick}=props;
 
-return <div  className={`menu-Item ${isActive?"menu-active":""}`}>
+return <div onClick={()=>onClick()}  className={`menu-Item ${isActive?"menu-active":""}`}>
 <Icon name={icon}/>
 <p className="kahsdfe-waeas2">{title}</p>
 </div>

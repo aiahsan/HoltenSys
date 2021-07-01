@@ -275,6 +275,7 @@ display: flex;
     max-width: 350px;
     width: 100%;
     padding: 22px 0px 22px 22px;
+
   }
   .todo-body-1
   {
@@ -1091,6 +1092,7 @@ border-bottom: 1px solid rgba(68, 68, 93, 0.07)!important;
         .todo-body{
             margin-top: 30px;
             max-width: 100%;
+            
         }
         .sideNav{
             display: none;
@@ -1206,3 +1208,8 @@ padding: 0px!important;
         width: 98%;
     }
     
+
+    .todo-inner{
+        /* max-height: 307px;
+        overflow: auto; */
+    }

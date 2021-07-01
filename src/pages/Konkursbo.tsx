@@ -58,7 +58,7 @@ const Home = () => {
                             <thead>
                                 <tr>
                                     <th><div className="d-flex align-items-center ooas92-23">
-                                        <CheckBox isCheck={false} isDisabled={false} />
+                                        <CheckBox  isCheck={false} isDisabled={false} />
                                         <p>Bonavn</p>
                                     </div></th>
                                     <th><div className="ooas92-24" >Bostyrer</div></th>

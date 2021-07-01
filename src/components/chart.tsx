@@ -110,9 +110,12 @@ const data = [
   export default ()=> {
 
     return (
+<ResponsiveContainer width="99%" aspect={3}>
+
+
         <LineChart
         width={1080}
-        height={461}
+        height={421}
         data={data}
         margin={{
           top: 5,
@@ -133,7 +136,7 @@ const data = [
         <ReferenceLine y={80}  label={<ReferenceLabel value="24"  />} strokeWidth={0}/> 
 
       </LineChart>
-   
+      </ResponsiveContainer>
       );
 
   }

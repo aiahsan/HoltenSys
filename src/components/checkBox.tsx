@@ -4,11 +4,12 @@ interface Props{
     isDisabled:boolean,
 }
 export default (props:Props)    => {
-    const {isDisabled,isCheck}=props;
+    const {isDisabled}=props;
+    const [isCheck,setisCheck]=React.useState(false);
     return <>
         <div>
             <label  className={`${isDisabled==true?"checkbox-button1":"checkbox-button"}`}>
-                <input type="checkbox" checked={isCheck}   className={`${isDisabled==true?"checkbox-button1__input":"checkbox-button__input"}`} id="choice1-1" name="choice1" />
+                <input type="checkbox" checked={isCheck} onClick={()=>setisCheck(!isCheck)}   className={`${isDisabled==true?"checkbox-button1__input":"checkbox-button__input"}`} id="choice1-1" name="choice1" />
                 <span   className={`${isDisabled==true?"checkbox-button1__control":"checkbox-button__control"}`}></span>
             </label>
         </div>

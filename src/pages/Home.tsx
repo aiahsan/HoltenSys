@@ -16,6 +16,7 @@ interface TodoProps {
 }
 const TodoItem = (props: TodoProps) => {
     const { title, description, isSelected } = props;
+    // const [isSelected,setisSelected]=React.useState(false);
     return <div className="asidsa-asndise">
         <div className="jdifsd-dsew">
             <div className="fniasd93ew-ewe">
@@ -42,6 +43,7 @@ const TodoItem = (props: TodoProps) => {
     </div>
 }
 const Home = () => {
+    const [todoArr,settodoArr]=React.useState<string[]>([]);
     return <div className="app-con d-flex">
         <SideNav />
         <div className="main-body">
@@ -105,14 +107,22 @@ const Home = () => {
                             <Icon name="menu" />
                         </button>
                     </div>
+                    <div className="todo-inner">
                     <TodoItem isSelected={true} title="Dummy Task name" description="Lorem Ipsum is simply dummy text of the
 printing and typesetting industry. "/>
                     <TodoItem isSelected={false} title="Dummy Task name" description="Lorem Ipsum is simply dummy text of the
 printing and typesetting industry. "/>
                     <TodoItem isSelected={false} title="Dummy Task name" description="Lorem Ipsum is simply dummy text of the
 printing and typesetting industry. "/>
+{
+todoArr.map((x,i)=><TodoItem key={i} isSelected={false} title="Dummy Task name" description="Lorem Ipsum is simply dummy text of the
+printing and typesetting industry. "/>)
+}
+                    </div>
                     <div className="d-flex aisdf-asdfswa2">
-                        <button className="btn nkcsdoc-wdcsd btn-add">
+                        <button onClick={()=>{
+                            settodoArr([...todoArr,""]);
+                        }} className="btn nkcsdoc-wdcsd btn-add">
                             <Icon name="plus" />
 
                         </button>
@@ -128,7 +138,7 @@ printing and typesetting industry. "/>
                         <Icon name="menu" />
                     </button>
                 </div>
-                <div className="chart-outer-body">
+                <div className="chart-outer-body1">
                 <Linechart/>    
                 </div>
                 
