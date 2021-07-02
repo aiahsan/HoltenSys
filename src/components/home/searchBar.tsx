@@ -1,9 +1,10 @@
 import React from 'react';
 import Icon from '../../svgIcons/svgIcons'
-export default ()=>{
+const Comp=()=>{
     return <div className="searchbar-head">
 
         <input type="text" placeholder="Search"/>
         <Icon name="search"/>
     </div>
 }
+export default Comp;

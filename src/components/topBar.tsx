@@ -1,8 +1,7 @@
-import React from 'react';
-import { Dropdown } from 'react-bootstrap';
+
 import TopMenuDropdown from './topMenuDropdown'
 import Icon from '../svgIcons/svgIcons'
-export default ()=>{
+const Comp=()=>{
     return   <div>
     <div className="d-flex align-items-center top-bar-body">
         <div className="top-bar-body-icon">
@@ -42,3 +41,4 @@ export default ()=>{
 
 </div>
 }
+export default Comp;

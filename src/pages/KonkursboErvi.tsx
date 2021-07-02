@@ -1,13 +1,8 @@
-import React from 'react';
-import { css, cx } from '@emotion/css'
 
 import SearchBar from '../components/home/searchBar';
 import SideNav from '../components/sideNav'
 import TopBar from '../components/topBar'
-import { Table } from 'react-bootstrap'
-import CheckBox from '../components/checkBox'
 import Icon from '../svgIcons/svgIcons'
-import Dropdown from '../components/dropdown';
 import MenuBtn from '../components/menubtn'
 const MenuItems=[{title:"Bonavn",isCheck:true,isDisabled:true,onClick:()=>alert()},
 {title:"Bostyrer",isCheck:true,isDisabled:true,onClick:()=>alert()},

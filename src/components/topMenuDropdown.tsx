@@ -1,4 +1,3 @@
-import React, { ReactNode } from 'react';
 import {Dropdown} from 'react-bootstrap'
 import Icon from '../svgIcons/svgIcons'
 interface DropdownProps
@@ -14,7 +13,7 @@ interface ItemProp{
 }
 
 
-export default (props:DropdownProps)=>{
+const Comp=(props:DropdownProps)=>{
     const {title,items,style,child}=props;
     return <div className="cst-dropdown cst-drp-icon">
     <Dropdown>
@@ -32,3 +31,4 @@ export default (props:DropdownProps)=>{
 </Dropdown>
     </div>
 }
+export default Comp;

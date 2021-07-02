@@ -1,5 +1,4 @@
-import React, { PureComponent } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ReferenceLine,ResponsiveContainer,LabelProps } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ReferenceLine,ResponsiveContainer } from 'recharts';
 
 export function ReferenceLabel(props:any) {
     const { 
@@ -107,7 +106,7 @@ const data = [
   ];
   
 
-  export default ()=> {
+  const Chart=()=> {
 
     return (
 <ResponsiveContainer width="99%" aspect={3}>
@@ -141,3 +140,4 @@ const data = [
 
   }
   
+  export default Chart;

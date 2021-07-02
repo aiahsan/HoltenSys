@@ -1,24 +1,18 @@
 import React from 'react';
-import { css, cx } from '@emotion/css'
 
 import SearchBar from '../components/home/searchBar';
 import SideNav from '../components/sideNav'
 import TopBar from '../components/topBar'
-import { Table } from 'react-bootstrap'
 import CheckBox from '../components/checkBox'
 import Icon from '../svgIcons/svgIcons'
 import Dropdown from '../components/dropdown';
-import MenuBtn from '../components/menubtn';
-import BreadCrum from '../components/breadCrum';
+
 import Switch from "react-switch";
 import { Editor } from '@tinymce/tinymce-react';
-import TopMenu from '../components/topmenu';
 
-const MenuItems = [{ title: "Detaljer", onClick: () => alert(), isActive: true }, { title: "Lonnskrav", onClick: () => alert(), isActive: false }, { title: "Dokumenter", onClick: () => alert(), isActive: false }];
 const MenuItems1 = [{ title: "Send e-post", onClick: () => alert() }, { title: "Last opp dokumentasjon", onClick: () => alert() }, { title: "Opprett Lonnskrav", onClick: () => alert() }, { title: "Opprett som kreditor", onClick: () => alert() }];
 const Home = () => {
     const [switch1, setSwitch1] = React.useState(false);
-    const editorRef = React.useRef();
 
 
     return <div className="app-con d-flex">

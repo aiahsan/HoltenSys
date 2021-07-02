@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Logo from '../components/logo'
 const Login = () => {
   return (
@@ -14,10 +13,10 @@ const Login = () => {
             </div>
             <div>
               <div className="d-flex justify-content-between">
-                {" "}
+                
                 <label className="lblds-weds">Password</label>
                 <label className="lblds-weds">
-                  <a href="">Forgot password?</a>
+                  <a href="/">Forgot password?</a>
                 </label>
               </div>
               <input className="form-control" type="password" name="password"  />

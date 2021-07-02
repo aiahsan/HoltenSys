@@ -1,5 +1,4 @@
 import React from 'react';
-import { css, cx } from '@emotion/css'
 
 import SearchBar from '../components/home/searchBar';
 import SideNav from '../components/sideNav'

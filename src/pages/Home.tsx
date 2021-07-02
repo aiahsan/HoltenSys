@@ -1,5 +1,4 @@
 import React from 'react';
-import { css, cx } from '@emotion/css'
 
 import SearchBar from '../components/home/searchBar';
 import SideNav from '../components/sideNav'
@@ -21,9 +20,9 @@ const TodoItem = (props: TodoProps) => {
         <div className="jdifsd-dsew">
             <div className="fniasd93ew-ewe">
                 <CheckBox isCheck={isSelected} isDisabled={false} />
-                <p className={`ldknaf-saedsd ${isSelected == true ? "jfdsis-sdsae" : "jfdsis-sdsae-1"}`} >{title}</p>
+                <p className={`ldknaf-saedsd ${isSelected === true ? "jfdsis-sdsae" : "jfdsis-sdsae-1"}`} >{title}</p>
             </div>
-            <div className={isSelected == true ? "" : "d-none"}>
+            <div className={isSelected === true ? "" : "d-none"}>
                 <button className="btn nkcsdoc-wdcsd mjdf-ds2">
                     <Icon name="edit" />
                 </button>

@@ -11,7 +11,7 @@ interface ItemProp{
     title:string,
     onClick:()=>void;
 }
-export default (props:DropdownProps)=>{
+const Comp=(props:DropdownProps)=>{
     const {title,items,style}=props;
     return <div className="cst-dropdown">
     <Dropdown>
@@ -34,3 +34,4 @@ export default (props:DropdownProps)=>{
 </Dropdown>
     </div>
 }
+export default Comp;

@@ -18,7 +18,7 @@ return <div><div onClick={()=>onClick()}  className={`menu-Item ${isActive?"menu
 </div>
 <div className="ml-19px">
     
-<Icon name={menuOpen==true?"drpchevdown":"drpchev"}/>
+<Icon name={menuOpen===true?"drpchevdown":"drpchev"}/>
 </div>
 </div>
 

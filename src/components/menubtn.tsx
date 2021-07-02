@@ -13,7 +13,7 @@ interface ItemProp{
     isDisabled:boolean;
     onClick:()=>void;
 }
-export default (props:DropdownProps)=>{
+const Comp=(props:DropdownProps)=>{
     const {items,style}=props;
     return <div className="menu-btn-cst cst-dropdown" style={style?{height:24}:{}}>
     <Dropdown >
@@ -23,7 +23,7 @@ export default (props:DropdownProps)=>{
 
   <Dropdown.Menu>
     {items?.map((x,i)=>  <Dropdown.Item key={i} >
-        <div className="menu-btn-item-cst" ><CheckBox  isCheck={x.isCheck} isDisabled={x.isDisabled}/> <div className={`${x.isDisabled==true?"hids-euw23":""}`} onClick={x.onClick}>
+        <div className="menu-btn-item-cst" ><CheckBox  isCheck={x.isCheck} isDisabled={x.isDisabled}/> <div className={`${x.isDisabled===true?"hids-euw23":""}`} onClick={x.onClick}>
         {x.title}
             </div> </div>
         </Dropdown.Item>)}
@@ -31,3 +31,4 @@ export default (props:DropdownProps)=>{
 </Dropdown>
     </div>
 }
+export default Comp;
