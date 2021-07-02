@@ -18,17 +18,17 @@ const Comp = () => {
         <Nav.Link href="/">Dashboard</Nav.Link>
         {
           location.pathname === "/konkursbo" ||location.pathname ===  "/lonnskrav"||location.pathname === "/konkursboervi"? <NavDropdownMenu title="konkursbo" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Ervi AS</NavDropdown.Item>
+            <NavDropdown.Item href="/">Ervi AS</NavDropdown.Item>
             <NavDropdown.Item href="/konkursboervi">Info om Boet</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1"><DropdownSubmenu  title="Ansatte og lonnskrav">
+            <NavDropdown.Item href="/"><DropdownSubmenu  title="Ansatte og lonnskrav">
 <NavDropdown.Item >Alle ansatte</NavDropdown.Item>
 <NavDropdown.Item href="/lonnskrav" >Alle lonnskrav (3)</NavDropdown.Item>
 
 </DropdownSubmenu></NavDropdown.Item>
-<NavDropdown.Item href="#action/3.1">Kreditorer og Fordringer</NavDropdown.Item>
-<NavDropdown.Item href="#action/3.1">Regnskap</NavDropdown.Item>
-<NavDropdown.Item href="#action/3.1">Meldinger</NavDropdown.Item>
-<NavDropdown.Item href="#action/3.1">Oppgaver</NavDropdown.Item>
+<NavDropdown.Item href="/">Kreditorer og Fordringer</NavDropdown.Item>
+<NavDropdown.Item href="/">Regnskap</NavDropdown.Item>
+<NavDropdown.Item href="/">Meldinger</NavDropdown.Item>
+<NavDropdown.Item href="/">Oppgaver</NavDropdown.Item>
 
 
           </NavDropdownMenu>

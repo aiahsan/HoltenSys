@@ -15,6 +15,7 @@ const SideNav=()=>{
         history.push(name)
     }
 
+    
     React.useEffect(()=>{
         if(location.pathname==="/konkursboervi"||location.pathname==="/lonnskrav")
         {
@@ -37,15 +38,15 @@ const SideNav=()=>{
             {
                 menuOpen===true?<div className="sidebar-dropdown-menu">
 
-                <div className="sidebar-dropdown-menu-div">  <a  className={`sidebar-dropdown-menu-a evis-font`}>Ervi AS</a></div>
-                   <div className="sidebar-dropdown-menu-div" onClick={()=>hanldeChange(1,"konkursboervi")}> <a  className={`sidebar-dropdown-menu-a ${location.pathname==="/konkursboervi"?"active": ""}`}>Info om Boet</a></div>
+                <div className="sidebar-dropdown-menu-div">  <button  className={`sidebar-dropdown-menu-a evis-font`}>Ervi AS</button></div>
+                   <div className="sidebar-dropdown-menu-div" onClick={()=>hanldeChange(1,"konkursboervi")}> <button  className={`sidebar-dropdown-menu-a ${location.pathname==="/konkursboervi"?"active": ""}`}>Info om Boet</button></div>
                    <div className="sidebar-dropdown-menu-div" onClick={()=>hanldeChange(1,"lonnskrav")}>
 
-                   <a className={`sidebar-dropdown-menu-a  ${location.pathname==="/lonnskrav"?"active": ""}`}>Ansatte og lonnskrav</a>
+                   <button className={`sidebar-dropdown-menu-a  ${location.pathname==="/lonnskrav"?"active": ""}`}>Ansatte og lonnskrav</button>
 
                     {openLonnskrav===true?<div>
                  <div>       <a href="/" className={`sidebar-dropdown-menu-a  ${location.pathname===""?"active": ""}`}>Alle ansatte</a></div>
-                 <div><a  className={`sidebar-dropdown-menu-a  ${location.pathname==="/lonnskrav"?"active": ""}`}>Alle lonnskrav (3)</a>
+                 <div><button  className={`sidebar-dropdown-menu-a  ${location.pathname==="/lonnskrav"?"active": ""}`}>Alle lonnskrav (3)</button>
 
 </div>
                         

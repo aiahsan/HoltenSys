@@ -1236,6 +1236,8 @@ padding: 0px!important;
         text-decoration: none!important;
         padding: 0px;
         cursor: pointer;
+        background-color: transparent;
+    border: none;
     }
     .sidebar-dropdown-menu-a:hover,.sidebar-dropdown-menu .active
     {
