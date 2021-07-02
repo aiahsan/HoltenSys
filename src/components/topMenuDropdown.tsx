@@ -24,7 +24,7 @@ export default (props:DropdownProps)=>{
   </Dropdown.Toggle>
 
   <Dropdown.Menu>
-    {items?.map((x,i)=>  <Dropdown.Item >
+    {items?.map((x,i)=>  <Dropdown.Item key={i} >
         <div onClick={()=>x.onClick()}><p>{x.itemrender?x.itemrender():<></>}</p></div>
 
         </Dropdown.Item>)}

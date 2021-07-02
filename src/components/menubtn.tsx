@@ -22,7 +22,7 @@ export default (props:DropdownProps)=>{
   </Dropdown.Toggle>
 
   <Dropdown.Menu>
-    {items?.map((x,i)=>  <Dropdown.Item >
+    {items?.map((x,i)=>  <Dropdown.Item key={i} >
         <div className="menu-btn-item-cst" ><CheckBox  isCheck={x.isCheck} isDisabled={x.isDisabled}/> <div className={`${x.isDisabled==true?"hids-euw23":""}`} onClick={x.onClick}>
         {x.title}
             </div> </div>

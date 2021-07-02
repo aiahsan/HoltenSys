@@ -75,7 +75,7 @@ const Home = () => {
                             </thead>
                             <tbody>
                                 {
-                                    Array.from({ length: 5 }, (v, i) => <tr>
+                                    Array.from({ length: 5 }, (v, i) => <tr key={i}>
                                         <td>Dummy Name</td>
                                         <td>32</td>
                                         <td>+47-123 45 678</td>
