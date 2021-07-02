@@ -68,8 +68,8 @@ const SideNav=()=>{
                    
                 </div>:<></>
             }
-            <MenuItem onClick={()=>hanldeChange(2,"lonnskrav")} icon="lon" title="Lønnskravene" isActive={false}/>
-            <MenuItem onClick={()=>hanldeChange(3,"konkursboervi")} icon="for" title="Fordringer" isActive={false}/>
+            <MenuItem onClick={()=>hanldeChange(2,"")} icon="lon" title="Lønnskravene" isActive={false}/>
+            <MenuItem onClick={()=>hanldeChange(3,"")} icon="for" title="Fordringer" isActive={false}/>
             <MenuItem onClick={()=>hanldeChange(4,"ola")} icon="opp" title="Oppgaver" isActive={location.pathname=="/ola"?true: false}/>
             <MenuItem onClick={()=>hanldeChange(5,"messaging")} icon="mes" title="Messaging" isActive={location.pathname=="/messaging"?true: false}/>
         </div>
