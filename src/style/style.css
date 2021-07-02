@@ -1259,3 +1259,10 @@ font-size: 16px;
 line-height: 19px;
 color: #FFFFFF;
     }
+
+    .dropdown-submenu-container .dropdown-submenu{
+        padding: 0px!important;
+    }
+    .dropdown-item:focus, .dropdown-item:hover{
+        background-color: transparent!important;
+    }

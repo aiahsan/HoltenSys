@@ -20,10 +20,12 @@ import {
 function App() {
   return (
     <>
-                        <TopMenu/>
+                        
 
      <Router>
+     <TopMenu/>
     <Switch>
+    
           <Route exact path="/">
             <Home />
           </Route>
