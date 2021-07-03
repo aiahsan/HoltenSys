@@ -33,7 +33,7 @@ const Login = () => {
 
           Cookies.set('token', response.data.token,{ expires: 30 });
           Cookies.set('email', response.data.email,{ expires: 30 });
-          history.push('/')
+          window.location.href="/";
         }
       })
       .catch((error) => {

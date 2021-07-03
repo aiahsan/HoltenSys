@@ -24,7 +24,7 @@ import PageNotFound from './pages/404';
 
 const LoginRoutes=()=>{
   return <Switch>
-     <Route path="/">
+     <Route path="/login">
                 <Login />
             </Route>
             <Route path="/signup">
@@ -71,7 +71,7 @@ const AuthRoutes=()=>{
 
 }
 function Routes() {
-  
+
     return (
       <>
         <Router>
