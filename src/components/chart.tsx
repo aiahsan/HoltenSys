@@ -44,22 +44,22 @@ export function ReferenceLabel(props:any) {
 }
 const data = [
     {
-      name: 'January',
+      name: 'Jan',
       uv: 45,
       pv: 55,
     },
     {
-      name: 'February',
+      name: 'Feb',
       uv: 62,
       pv: 52,
     },
     {
-      name: 'March',
+      name: 'Mar',
       uv: 58,
       pv: 42,
     },
     {
-      name: 'April',
+      name: 'Apr',
       uv: 62,
       pv: 72,
     },
@@ -69,37 +69,37 @@ const data = [
       pv: 70,
     },
     {
-      name: 'June',
+      name: 'Jun',
       uv: 32,
       pv: 45,
     },
     {
-      name: 'July',
+      name: 'Jul',
       uv: 50,
       pv: 60,
     },
     {
-      name: 'August',
+      name: 'Aug',
       uv: 60,
       pv: 70,
     },
     {
-      name: 'September',
+      name: 'Sep',
       uv: 70,
       pv: 55,
     },
     {
-      name: 'October',
+      name: 'Oct',
       uv: 60,
       pv: 70,
     },
     {
-      name: 'November',
+      name: 'Nov',
       uv: 90,
       pv: 85,
     },
     {
-      name: 'December',
+      name: 'Dec',
       uv: 70,
       pv:60,
     },
