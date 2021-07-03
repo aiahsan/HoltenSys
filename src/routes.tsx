@@ -22,62 +22,63 @@ import React from 'react';
 import {checkLogin} from './components/checkLogin';
 import PageNotFound from './pages/404';
 
-
-function Routes() {
-
-    return (
-      <>
-        <Router>
-          <TopMenu/>
-          <Switch>
-          <Route path="/login">
+const LoginRoutes=()=>{
+  return <Switch>
+     <Route path="/">
                 <Login />
             </Route>
             <Route path="/signup">
                 <Signup />
-            </Route>
+      </Route>
 
-                <Route exact path="/">
-                    <Home />
-                </Route>
-                
-                <Route exact path="/logout">
-                    <Logout />
-                </Route>
-                <Route exact path="/konkursbo">
-                <Konkursbo />
-                </Route>
-                <Route path="/lonnskrav">
-                <Lonnskrav />
-                </Route>
-                <Route path="/konkursboervi">
-                <KonkursboErvi />
-                </Route>
+  </Switch>
+}
 
-                <Route path="/ola">
-                <Ola />
-                </Route>
-                <Route path="/messaging">
-                <Messaging />
-                </Route>
+const AuthRoutes=()=>{
+  return    <Switch>
+         
+  <Route exact path="/">
+      <Home />
+  </Route>
+  
+  <Route exact path="/logout">
+      <Logout />
+  </Route>
+  <Route exact path="/konkursbo">
+  <Konkursbo />
+  </Route>
+  <Route path="/lonnskrav">
+  <Lonnskrav />
+  </Route>
+  <Route path="/konkursboervi">
+  <KonkursboErvi />
+  </Route>
 
-                <Route path="/404">
-                <PageNotFound />
-                </Route>
+  <Route path="/ola">
+  <Ola />
+  </Route>
+  <Route path="/messaging">
+  <Messaging />
+  </Route>
 
-            <Route
-                exact
-                path="/"
-                render={() => {
-                return (
-                checkLogin() ?
-                    <Redirect to="/" /> :
-                    <Redirect to="/login" />
-                )
-                }}
-            />
-            
-          </Switch>
+  <Route path="/404">
+  <PageNotFound />
+  </Route>
+
+
+
+</Switch>
+
+}
+function Routes() {
+  
+    return (
+      <>
+        <Router>
+          <TopMenu/>
+          {
+            checkLogin()==true?<AuthRoutes/>:<LoginRoutes/>
+          }
         </Router>
   
 
