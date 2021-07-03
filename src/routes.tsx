@@ -24,10 +24,12 @@ import PageNotFound from './pages/404';
 
 const LoginRoutes=()=>{
   return <Switch>
-     <Route path="/login">
+   
+     <Route exact path={["/login", "/"]} >
+       
                 <Login />
             </Route>
-            <Route path="/signup">
+            <Route exact path="/signup">
                 <Signup />
       </Route>
 
@@ -54,10 +56,10 @@ const AuthRoutes=()=>{
   <KonkursboErvi />
   </Route>
 
-  <Route path="/ola">
+  <Route exact path="/ola">
   <Ola />
   </Route>
-  <Route path="/messaging">
+  <Route exact path="/messaging">
   <Messaging />
   </Route>
 
